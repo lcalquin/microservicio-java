@@ -1,7 +1,8 @@
-name: CI
+name: CI With Maven
 
 on:
   push:
+  pull_request:
 
 jobs:
   
@@ -11,8 +12,8 @@ jobs:
 
     steps:
     
-      - name: checkout
-        uses: actions/checkout@v3
+      - name: Clonacion de Codigo
+        uses: actions/checkout@v4
 
       - name: Setup Java JDK
         uses: actions/setup-java@v4.2.1
