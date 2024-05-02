@@ -18,5 +18,6 @@ jobs:
       uses: actions/setup-java@v4.2.1
       with:
         java-version: '17'
-	permissions: 'temurin'
- 
+	distribution: 'temurin'
+ 	cache: maven
+  
